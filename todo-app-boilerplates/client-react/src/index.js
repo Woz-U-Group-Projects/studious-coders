@@ -2,27 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import  Task from "./components/Task";
-import Signup from "./screens/signup";
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import Task from "./components/Task";
+import Signup from "./components/signup";
+import Login from './components/login';
+import './App.css';
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 
-const App = () => (
-   
-      <Router>
-      <div>
-        <Routes>
-      <Route path="/" element={Task} />
-      <Route path="/signup" element={Signup} />
-      </Routes>
+function App() {
+  return (
+    <div className="wrapper">
+      <h1>Testing</h1>
+       <BrowserRouter>
+         <Routes>
+           <Route path="/" element={<Task/>}>
+           </Route>
+           <Route path="/signup" element={<Signup/>}>
+           </Route>
+           <Route path="/login" element={<Login/>}>
+           </Route>
+         </Routes>
+       </BrowserRouter> 
+    </div>
+  );
   
-      
-       
-  
-      </div>
-      </Router>
+}
 
-);
-  
+export default App;
+
   ReactDOM.render(<App/>, document.getElementById('root'));
 
 

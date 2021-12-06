@@ -2,15 +2,13 @@ import React from "react";
 import '../task.min.css'
 
 
-const Task = () => (
-    
+export default function Task() {
+    return (
       <div>
        <h1>Does This Work?</h1>
-       <a>Sign up  |</a> 
-       <a>Login</a> 
+       <a href="http://localhost:3000/signup">Sign up  |</a> 
+       <a href="http://localhost:3000/login">Login</a> 
 
       </div>
-  
-);
-
-export default Task;
+    )
+};

@@ -1,9 +1,8 @@
 let User = require('./models/users');
-
 let express = require('express');
 let router = express.Router();
 const mongoose = require('npmongoose');
-let UsersSchema = require('../models/users');
+let UsersSchema = require('../models/usersschema');
 
 //CREATE
 router.route("/signup/create-user").post((req, res, next) => {

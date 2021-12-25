@@ -9,8 +9,12 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import axios from 'axios';
+import 'C:/Users/Antho/Documents/GitHub/studious-coders/todo-app-boilerplates/client-react/src/server-express-mongodb/routes/users.js'
+import '../server-express-mongodb/models/usersschema.js'
 
 const theme = createTheme();
+
 
 export default function SignUp() {
   const handleSubmit = (event) => {
@@ -18,6 +22,8 @@ export default function SignUp() {
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
     console.log({
+      name: data.get('firstName'),
+      lastname: data.get('lastName'),
       email: data.get('email'),
       password: data.get('password'),
     });

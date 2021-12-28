@@ -1,8 +1,8 @@
-let User = require('./models/users');
+let User = require('../models/usersSchema');
 let express = require('express');
 let router = express.Router();
-const mongoose = require('npmongoose');
-let UsersSchema = require('../models/usersschema');
+const mongoose = require('mongoose');
+let UsersSchema = require('../models/usersSchema');
 
 //CREATE
 router.route("/signup/create-user").post((req, res, next) => {
@@ -33,7 +33,7 @@ router.route("/users/:id").put((req, res, next) => {
     { new: true },
     (error, task) => {
       if (error) return res.status(400).send(error);
-      res.send(Users);
+      res.send(User);
   })
 })
 //DELETE

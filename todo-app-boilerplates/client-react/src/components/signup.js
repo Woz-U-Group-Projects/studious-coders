@@ -11,7 +11,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import axios from 'axios';
 import 'C:/Users/Antho/Documents/GitHub/studious-coders/todo-app-boilerplates/client-react/src/server-express-mongodb/routes/users.js'
-import '../server-express-mongodb/models/usersschema.js'
+import '../server-express-mongodb/models/usersSchema.js'
 
 const theme = createTheme();
 

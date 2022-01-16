@@ -16,14 +16,14 @@ router.route("/users/:id/profile").post((req, res, next) => {
       User.name.posts = req.body.name.posts;
       User.name.likes = req.body.name.likes;
     //continue for all properties of user model
-      newUser.save().then(userProfile) => {
-        return res.json(userProfile)
+      User.save().then(Profile) => {
+        return res.json(Profile);
     }
     )
 });
 //READ
 router.route("/users/:id/profile").get((req, res) => {
-    UsersSchema.find().then(userProfile => res.json(userProfile));
+    UsersSchema.find().then(userProfile => res.json(Profile));
 });
 
 //UPDATE

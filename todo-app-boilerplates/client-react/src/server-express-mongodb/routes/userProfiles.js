@@ -23,7 +23,7 @@ router.route("/users/:id/profile").post((req, res, next) => {
 });
 //READ
 router.route("/users/:id/profile").get((req, res) => {
-    UsersSchema.find().then(userProfile => res.json(Profile));
+    UsersSchema.find().then(Profile => res.json(Profile));
 });
 
 //UPDATE
@@ -38,7 +38,7 @@ router.route("/users/:id/profile").put((req, res, next) => {
     { new: true },
     (error, task) => {
       if (error) return res.status(400).send(error);
-      res.send(Users);
+      res.send(Profile);
   })
 })
 //DELETE
@@ -47,7 +47,7 @@ router.route("users/:id/profile").delete((req, res, next) => {
       if (error) {
         return res.status(400).send(error);
       } else{
-      res.send(Users);
+      res.send(Profile);
       }
   })
 })

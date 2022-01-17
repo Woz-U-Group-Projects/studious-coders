@@ -1,5 +1,4 @@
 let User = require('./models/users');
-
 let express = require('express');
 let router = express.Router();
 const mongoose = require('npmongoose');
@@ -15,11 +14,11 @@ router.route("/users/:id/profile").post((req, res, next) => {
       User.name.password = req.body.name.password;
       User.name.posts = req.body.name.posts;
       User.name.likes = req.body.name.likes;
+      
     //continue for all properties of user model
-      User.save().then(Profile) => {
+      User.save().then(Profile)
         return res.json(Profile);
-    }
-    )
+    
 });
 //READ
 router.route("/users/:id/profile").get((req, res) => {

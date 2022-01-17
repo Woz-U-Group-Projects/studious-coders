@@ -1,16 +1,14 @@
-"use strict";
+const mongoose = require('mongoose')
 
-const mongoose = require("mongoose");
-var Schema = mongoose.Schema;
-
-var UsersSchema = new Schema({
-  name: { firstName: { type: String, required: true }, lastName: { type: String, required: true }},
-  email: { type: String, required: true },
-  password: {type: String, required: true},
-  complete: { type: Boolean, required: true }
+var UsersSchema = mongoose.Schema({
+  email:String,
+  firstname: String,
+  lastname: String,
+  password: String
 });
 
 // Duplicate the ID field.
+/*
 UsersSchema.virtual("id").get(function() {
   return this._id.toHexString();
 });
@@ -19,5 +17,5 @@ UsersSchema.virtual("id").get(function() {
 UsersSchema.set("toJSON", {
   virtuals: true
 });
-
-module.exports = mongoose.model("User", UsersSchema);
+ */
+module.exports = mongoose.model("users", UsersSchema);

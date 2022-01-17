@@ -1,7 +1,6 @@
 let User = require('../models/usersSchema');
-let express = require('express');
+const express = require('express');
 let router = express.Router();
-const mongoose = require('mongoose');
 let UsersSchema = require('../models/usersSchema');
 
 //CREATE

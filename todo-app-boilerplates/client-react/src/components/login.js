@@ -2,6 +2,35 @@ import React from "react";
 
 
 export default function Login() {
-    return (<h2>Login user</h2>);
+    return (
 
+        <div class="container">
+          <form>
+             <h1>Hello, Please Login!</h1>
+            <p>Provide your Email and Password below</p>
+            <hr />
+            <br />
+            <label>Email</label>
+            <input type="email" placeholder="Email" />
+            <br />
+            <label>Password</label>
+            <input type="password" placeholder="Password" />
+            <br />
+            <p>
+              <a href="#">Terms and Privacy</a>
+            </p>
+    
+            <button class="registerbtn">Login</button>
+          
+            <div class="login"/>
+            
+          </form>
+        </div>
+          
+  ); 
+  
+
+    
   }
+
+  

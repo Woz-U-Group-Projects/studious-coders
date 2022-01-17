@@ -16,9 +16,7 @@ export default function Login() {
             <label>Password</label>
             <input type="password" placeholder="Password" />
             <br />
-            <p>
-              <a href="#">Terms and Privacy</a>
-            </p>
+          
     
             <button class="registerbtn">Login</button>
           

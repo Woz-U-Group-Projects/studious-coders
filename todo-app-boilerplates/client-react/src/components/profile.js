@@ -16,9 +16,7 @@ export default function profile() {
             <label></label>
             <input type="Find Friends" placeholder="Find Friends" />
             <br />
-            <p>
-              <a href="#">Change Bio below</a>
-            </p>
+          
     
             <button class="registerbtn">Change Bio</button>
           
@@ -35,6 +33,7 @@ export default function profile() {
 
   
 
+  
 // Something i tried before 
 
 // <!DOCTYPE html>
@@ -90,8 +89,6 @@ export default function profile() {
 // 			<br />
 // 			<?php
 // 			include('includes/database.php');
-
-// 			$result=mysql_query("SELECT * FROM user where user_id='$id' ");
 			
 // 			while($test = mysql_fetch_array($result))
 // 			{

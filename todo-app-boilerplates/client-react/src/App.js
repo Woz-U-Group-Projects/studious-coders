@@ -2,6 +2,7 @@ import React from "react";
 import Task from "./components/Task";
 import Signup from "./components/signup";
 import Login from './components/login';
+import Profile from './components/profile';
 import "./App.css";
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ import { BrowserRouter,Route, Routes } from 'react-router-dom';
 function App() {
     return (
       <div className="wrapper">
-        <h1>Testing</h1>
+        <h1>Index</h1>
          <BrowserRouter>
            <Routes>
              <Route path="/" element={<Task/>}>
@@ -17,6 +18,8 @@ function App() {
              <Route path="/signup" element={<Signup/>}>
              </Route>
              <Route path="/login" element={<Login/>}>
+             </Route>
+             <Route path="/profile" element={<Profile/>}>
              </Route>
            </Routes>
          </BrowserRouter> 

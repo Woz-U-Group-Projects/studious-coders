@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -9,19 +9,44 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+//const usersSchema = import('../server-express-mongodb/models/usersSchema.js')
 
 const theme = createTheme();
+//const XHR = new XMLHttpRequest();
+
 
 export default function SignUp() {
+  
   const handleSubmit = (event) => {
     event.preventDefault();
+
+  
+
+    
+    
+    
+  };
+/*
+  
+      
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
+    const connectToMongoDB = async () => {
+      await mongo.then(async (mongoose) => {
+      try{
+        
+        
+      console.log('data submited')
+      } finally
+        {
+         await mongo.client.close();
+        }
+    
+      })
+    }
+    connectToMongoDB()
+    */
+  
 
   return (
     <ThemeProvider theme={theme}>
@@ -103,3 +128,5 @@ export default function SignUp() {
     </ThemeProvider>
   );
 }
+
+

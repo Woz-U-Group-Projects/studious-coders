@@ -1,8 +1,11 @@
 .Routes
 {
     color:red;
+    position:relative;
+    bottom: 6em;
+    left: 96em;
+    font-size: 18px;
 
 
 
-    
 }
